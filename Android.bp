@@ -171,6 +171,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "manifest_media_c2_V1_2_default.xml",
+    owner: "redmi",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_vendor.dolby.hardware.dms.xml",
 	owner: "redmi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml",
@@ -179,3 +188,9 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+install_symlink {
+    name: "vendor_bin_hw_android_hardware_media_c2@1_2-mediatek",
+    soc_specific: true,
+    installed_location: "bin/hw/android.hardware.media.c2@1.2-mediatek",
+    symlink_target: "/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
+}
