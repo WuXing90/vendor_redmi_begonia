@@ -61,42 +61,6 @@ dex_import {
 	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
 }
 
-cc_prebuilt_library_shared {
-	name: "prebuilt_libfmjni",
-	owner: "redmi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/system/lib64/libfmjni.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-}
-
-android_app_import {
-	name: "LocationEM2",
-	owner: "redmi",
-	apk: "proprietary/app/LocationEM2/LocationEM2.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "YGPS",
-	owner: "redmi",
-	apk: "proprietary/app/YGPS/YGPS.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
 android_app_import {
 	name: "EngineerMode",
 	owner: "redmi",
@@ -117,17 +81,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-}
-
-android_app_import {
-	name: "EmCamera",
-	owner: "redmi",
-	apk: "proprietary/vendor/app/EmCamera/EmCamera.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
 }
 
 android_app_import {
