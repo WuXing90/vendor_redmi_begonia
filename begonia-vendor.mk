@@ -1864,6 +1864,7 @@ PRODUCT_PACKAGES += \
     libshim_audio \
     libaedv \
     libui-v34 \
+    libgui_shim \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
