@@ -8,57 +8,60 @@ soong_namespace {
 }
 
 dex_import {
-	name: "mediatek-common",
-	owner: "redmi",
-	jars: ["proprietary/framework/mediatek-common.jar"],
+    name: "mediatek-common-begonia",
+    stem: "mediatek-common",
+    owner: "redmi",
+    jars: ["proprietary/framework/mediatek-common.jar"],
 }
 
 dex_import {
-	name: "mediatek-framework",
-	owner: "redmi",
-	jars: ["proprietary/framework/mediatek-framework.jar"],
+    name: "mediatek-framework",
+    owner: "redmi",
+    jars: ["proprietary/framework/mediatek-framework.jar"],
 }
 
 dex_import {
-	name: "mediatek-ims-base",
-	owner: "redmi",
-	jars: ["proprietary/framework/mediatek-ims-base.jar"],
+    name: "mediatek-ims-base",
+    owner: "redmi",
+    jars: ["proprietary/framework/mediatek-ims-base.jar"],
 }
 
 dex_import {
-	name: "mediatek-ims-common",
-	owner: "redmi",
-	jars: ["proprietary/framework/mediatek-ims-common.jar"],
+    name: "mediatek-ims-common",
+    owner: "redmi",
+    jars: ["proprietary/framework/mediatek-ims-common.jar"],
 }
 
 dex_import {
-	name: "mediatek-ims-extension-plugin",
-	owner: "redmi",
-	jars: ["proprietary/framework/mediatek-ims-extension-plugin.jar"],
+    name: "mediatek-ims-extension-plugin",
+    owner: "redmi",
+    jars: ["proprietary/framework/mediatek-ims-extension-plugin.jar"],
 }
 
 dex_import {
-	name: "mediatek-ims-legacy",
-	owner: "redmi",
-	jars: ["proprietary/framework/mediatek-ims-legacy.jar"],
+    name: "mediatek-ims-legacy",
+    owner: "redmi",
+    jars: ["proprietary/framework/mediatek-ims-legacy.jar"],
 }
 
 dex_import {
-	name: "mediatek-telecom-common",
-	owner: "redmi",
-	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
+    name: "mediatek-telecom-common-begonia",
+    stem: "mediatek-telecom-common",
+    owner: "redmi",
+    jars: ["proprietary/framework/mediatek-telecom-common.jar"],
 }
 
 dex_import {
-	name: "mediatek-telephony-base",
-	owner: "redmi",
-	jars: ["proprietary/framework/mediatek-telephony-base.jar"],
+    name: "mediatek-telephony-base",
+    owner: "redmi",
+    jars: ["proprietary/framework/mediatek-telephony-base.jar"],
 }
 
 dex_import {
-	name: "mediatek-telephony-common",
-	owner: "redmi",
-	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+    name: "mediatek-telephony-common-begonia",
+    stem: "mediatek-telephony-common",
+    owner: "redmi",
+    jars: ["proprietary/framework/mediatek-telephony-common.jar"],
 }
 
 android_app_import {
